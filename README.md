@@ -1,4 +1,4 @@
-# challenge_1_fix_website
+# Horiseon Website Fix
 
 ## Description
 

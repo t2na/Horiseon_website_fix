@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* changed .header to header to reduce code and remove need for classifier */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +16,18 @@ header {
     color: #ffffff;
 }
 
+/* same thing, removed '.' to reduce code */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* ".seo" only needed, instead of ".header h1 seo" */
 .seo {
     color: #d9dcd6;
 }
 
+/* changed "div" in lines 30, 38, 42 to "nav", since this is a navigation section with links that point to other parts of the page */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,6 +40,7 @@ header nav ul {
     list-style-type: none;
 }
 
+/* display tag keeps links all in a row */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -46,6 +51,7 @@ a {
     text-decoration: none;
 }
 
+/* hero tag controls the main background image on the page */
 .hero {
     height: 800px;
     width: 100%;
@@ -55,6 +61,7 @@ a {
     background-position: center;
 }
 
+/* decided to use a "main" tag here, since this texts takes up the most space out of all the text on the page and refers to some of the main benefits of using Horiseon */
 main {
     width: 75%;
     display: inline-block;
@@ -65,6 +72,7 @@ p {
     font-size: 20px;
 }
 
+/* used a section tag to be correctly semantic, then used descendent selectors to help reduce code */
 main section{
     margin-bottom: 20px;
     padding: 50px;
@@ -85,6 +93,8 @@ main section h2 {
     font-size: 36px;
 }
 
+
+/* benefits classifier controls the elements of the vertical box on the right of the page */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -112,6 +122,7 @@ main section h2 {
     max-width: 150px;
 }
 
+/* used a "footer" tag instead of .footer classifier to remove the need for a classifier and more accurately / semantically describe the structure of the page */
 footer {
     padding: 30px;
     clear: both;
